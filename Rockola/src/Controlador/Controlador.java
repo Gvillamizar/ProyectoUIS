@@ -12,11 +12,9 @@ import Vista.JFrameProducto;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
-
-
 
 /**
  *
