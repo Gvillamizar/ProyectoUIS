@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "larockola-5cc46-331302",
+  "private_key_id": "19f6ffa3e41fc72106f3413d3ceff40a55f97610",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDP9VTy4bX91Tvu\nPvJZ3gIt5BeZ8M5gbVj4WHIqA16YdWdeRkBLPX3zN44qwtKQtcpfephS1J3puIjv\nsd7nltIAmYlEm5iS4tRxHtLXzPs3ERGIbXYoRvGaK8wsjOlJO6wxwZEJHcA3KYqi\n7mqFywC2zURjrmC90n9d3RU2L83SjsGsBtkrer6veW7n90j3GpvkSeBYy1Ke0Bnc\n3d8o6MqxWK887AvUxOHWAmNqdT+LgIyIRV+oFbQiwBv68IvmyQRIS9CDB9sYrNoI\n+f6opDjGMvWSnIgIHepwxToL+F0JOLoVrCdDlkgQUdzCNSHf33rKyoGmOqG060m+\nq8HGCyKlAgMBAAECggEAW2CElDjDnCafL9+u4/geYwXPrQ/Xzx0dM/rBJ17VqQ4l\nfpJF3AnIFx/5MybqGTYYF34qAnN0c+dnHFO/C2oFGshcPa5VC23qRU5y/OoQFLFG\nT/kxKx+JN+I40/aS51/2GOLiFOxispppVZCHdASwaqKlg1tzHNWqq5bipC27NeJD\nLwTQGBAoTEXnTtZKY4w8+5PvAm0QkCd0SodhUZydw2LEf0zoFjDKU/2ZSMQZnaLj\ni7GpALRdMHCyFS37u98NlC2MOlGBBK/AMVpNyBB5jAbNKkxXPdRcmHFOLP41tgO4\nYMJnXt9BOwGzCmMbhrYafioHz7bZGQFmC85f64GI/QKBgQD5J3F56gDv9zYFfbJO\nfeoR28emw9UtyBNOe55ZHV4VDFLZ+piU7lzAZ1ynsF0mG4cDts/TAqyUhULiFQZW\nmhkrs0NPH6vtXokc0uFe7+aVHJUm4JOnPI+jceDfMQB1BuFEMgEP1Jv8nxeTDfIr\npoNubf4rT3pYZObHbmTQTjl98wKBgQDVrB3Uam3P2pXJ3O8Qswn4b/7qycsCt79X\nhOGmBZYTh6n1NV63LCqOHLXrUduOa7rVPR80kAcB7xApSL4LW9QBe23vQi9H7ix6\nlxIdiTId+2HBR6MKXMZAsczoLtch1dywTM9jMu4rBxfCaw14+iEtmWCsRSS3Xqni\nxCk310PLBwKBgQCchGzC23+vP6tOE8J5kJwEj/6CAq/ezLtkKEA3Vz2NF2rMyKIl\nnP/jVotcRGyfzdcpPCSeOCXWP0je4bpTmQaK71gvUoQc37BezRMLIsXFkmkYPShE\nfMT3Nki/rPbOjX3h60/DdBpxvjd/B9nEFhymuK5c4tbGxMw9KFpoiVuQhQKBgDWD\nBnF1Og0tJAhLEYAwJpYWjlQEt5f1prDncY+fpIc9mZ30gMUFBZ9Tp2fIt2DCsCbJ\nSPBkBa1BTt3X/uhfVggM/mpGPAsapf8JqJrHCksh8shyBW4J8AixvqyDVpN9uOha\nRDIGxkj2XMfvAY/DrN17pQ9fvaNCzO8iy2PVwH+vAoGAabDF8oSuixR8ZUuwNKoz\ntXuadKLAx/+sjhGEa9juXypt7qNK098O7Gci99ArSQ9Y7eIz5exxB8ilV7VqZUbn\n4xKtB2UvIbL2T1SGfKux5sNZrXoQ+71OxHTBVZsXJ4Zx0T4YDW9B+IZz4IwfR7k3\nPYjGnpN5u7ocmhgkrq5g+Ag=\n-----END PRIVATE KEY-----\n",
+  "client_email": "rockola@larockola-5cc46-331302.iam.gserviceaccount.com",
+  "client_id": "117999970218027730457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rockola%40larockola-5cc46-331302.iam.gserviceaccount.com"
+}
