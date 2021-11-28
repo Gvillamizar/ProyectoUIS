@@ -6,9 +6,9 @@ import NavBar from "./components/NavBar";
 
 import Artistas from './screens/Artistas';
 import Catalogo from './screens/Catalogo';
-import NotFound from "./screens/NotFound";
 import Home from "./screens/Home";
 import Landing from "./screens/Landing";
+import NotFound from "./screens/NotFound";
 import Programacion from "./screens/Programacion";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <NavBar/>
       <Routes>
         <Route path="*" element={<NotFound />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
         <Route path="/artistas" element={<Artistas />} />
         <Route path="/catalogo" element={<Catalogo />} />

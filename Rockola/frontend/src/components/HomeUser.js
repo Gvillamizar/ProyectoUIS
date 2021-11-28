@@ -1,54 +1,33 @@
 import React from 'react'
 import { Container, Row, Col, Stack, Image, Dropdown, DropdownButton, Button, ButtonGroup } from 'react-bootstrap'
-import imagen from "../assets/img/Baner1.jpg"
+import imagen from "../assets/img/Baner3.jpg"
+
+import SearchBar from "./SearchBar";
 
 const HomeUser = () => {
-    //const user = JSON.parse(localStorage.getItem('data'));
-    //console.log(user.id)
+    var user = JSON.parse(localStorage.getItem("user"));
     return (
         <Container>
-            <Row>
+            <Row className="justify-content-md-center">
+                <Col md="auto">
+                        <h3>Bienvenido {user.name}</h3>
+                </Col>
                 <Col>
-                    <Stack gap={3} className="align-items-center">
+                    <Stack gap={10} className="align-items-center">
                         <Image src={imagen} />
-                        <Dropdown>
-                            <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                                Selecciona la ubicación de tu búsqueda
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="/searchresults">Bogotá</Dropdown.Item>
-                                <Dropdown.Item href="#">Lima</Dropdown.Item>
-                                <Dropdown.Item href="#">Berlín</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        <h1>Poner User.Id</h1>
                     </Stack>
                 </Col>
             </Row>
             <Row>
-                <ButtonGroup vertical>
-                    <Button>Button</Button>
-                    <Button>Button</Button>
-
-                    <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-1">
-                        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-                    </DropdownButton>
-
-                    <Button>Button</Button>
-                    <Button>Button</Button>
-
-                    <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-2">
-                        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-                    </DropdownButton>
-
-                    <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-3">
-                        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-                    </DropdownButton>
-                </ButtonGroup>
+                <Col>
+                    <ButtonGroup vertical>
+                        <Button><a href="/programacion" style={{color:'white'}}>Artistas</a></Button>
+                        <Button>Catálogo</Button>
+                    </ButtonGroup>
+                </Col>
+                <Col>
+                    <SearchBar />
+                </Col>
             </Row>
         </Container>
     )

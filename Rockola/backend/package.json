@@ -11,6 +11,7 @@
   "author": "Guillermo Villamizar, Cristina Villar, Pedro Ramírez, John Chavez",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "firebase-admin": "^10.0.0"
   }

@@ -1,16 +1,29 @@
+const dbm= require("./src/db/CrudMusica.js");
+
 const APIRutas = require('./routes');
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = 5000;
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
 app.use(express.json());
+app.use(cors());
 
 APIRutas(app);
 
 app.listen(port, ()=>{
   console.log('My port'+port);
 });
+
+
+   //Traer un musica particular
+   app.get('/musica/search/:nombre_Artista', function (req, res) {
+    const artista=req.params.nombre_Artista;
+    dbm.getMusicaArtista(artista,function(refDoc){
+      res.send(refDoc);
+     }) 
+  })
 
 // const dbU=require('./src/db/CrudUsuario.js')
 // const dbM=require('./src/db/crudMusica.js')

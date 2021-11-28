@@ -10,6 +10,13 @@ const router=express.Router();
     })
   })
 
+   //Traer un musica particular
+   router.get('/search/:nombre_Artista', function (req, res) {
+    const artista=req.params.nombre_Artista;
+    dbm.getMusicaArtista(artista,function(refDoc){
+      res.send(refDoc);
+     })
+  }) 
 
   //Traer un musica particular
   router.get('/:id', function (req, res) {
@@ -18,6 +25,9 @@ const router=express.Router();
         res.json(musica);
     })
   })
+
+
+  
 
   
   //Adicionar musica

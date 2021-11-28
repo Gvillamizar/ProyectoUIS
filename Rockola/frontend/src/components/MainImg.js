@@ -17,7 +17,7 @@ const MainImg = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption style={estilo}>
-                    <h1>Conocimiento especializado a tu alcance</h1>
+                    <h1>Programa tu música</h1>
                     <h2>Unete a la comunidad</h2>
                     <ButtonLogIn/>
                 </Carousel.Caption>
@@ -30,7 +30,7 @@ const MainImg = () => {
                 />
 
                 <Carousel.Caption style={estilo}>
-                    <h1>Ofrece tus servicios de todo lo que sabes</h1>
+                    <h1>Programa tu música</h1>
                     <h2>Unete a la comunidad</h2>
                 </Carousel.Caption>
             </Carousel.Item>            

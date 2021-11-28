@@ -15,7 +15,7 @@ function getMusica(callback){
 }
 
 
-//Traer la música x Id
+//Traer la música x id
 function getMusicaEspecifica(mid, callback){
     return db.collection("Musica").doc(mid).get()
     .then((doc) => {
@@ -24,6 +24,22 @@ function getMusicaEspecifica(mid, callback){
             callback(`Error getting music ${error}`);
     })
 }
+
+//Traer la música x artista
+ function getMusicaArtista(artista, callback){
+    return db.collection("Musica").where("Nombre_Artista", "==", artista).get()
+    .then((refDoc) => {
+        var arrayMusica = [];
+        refDoc.forEach(doc => {       
+            //doc.id --> El id del documento         
+            arrayMusica.push(doc.data());
+        })
+        callback(arrayMusica);
+    })
+    .catch((err) => {
+        callback("Error to search musica ", err)
+    })
+} 
 
 
 //Adicionar los musicos
@@ -69,6 +85,7 @@ function deleteMusica(mid, callback){
 module.exports = {
     getMusica,
     getMusicaEspecifica,
+    getMusicaArtista,
     addMusica,
     UpdateMusicaTotal,
     UpdateMusicaParcial,

@@ -17,26 +17,25 @@ firebase.initializeApp(config);
 // Configure FirebaseUI.
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
-  signInFlow: 'popup',
+  signInFlow: "popup",
   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
-  signInSuccessUrl: '/home',
+  signInSuccessUrl: "/home",
   // We will display Google and Facebook as auth providers.
   signInOptions: [
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID
   ],
+
   callbacks: {
-    // Avoid redirects after sign-in.
+    signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+      const user = {
+        uid: authResult.user.uid,
+        name: authResult.user.displayName,
+        photoUrl: authResult.user.photoURL,
+        email: authResult.user.email,
+        flagNewUser: authResult.additionalUserInfo.isNewUser,
+      };
 
-    signInSuccessWithAuthResult: (authResult) => {
-      const obj = {
-        "id": authResult.user.uid,
-        "email": authResult.user.email,
-        "picture": authResult.user.photoURL
-      }
-      localStorage.setItem('data', JSON.stringify(obj));
-      
-
+      localStorage.setItem("user", JSON.stringify(user));
       return true;
     },
   },
