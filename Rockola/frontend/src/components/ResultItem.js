@@ -1,31 +1,34 @@
 import React from "react";
 import { Stack, Image } from "react-bootstrap";
 import { FileEarmarkMusic, FileEarmarkPlay } from "react-bootstrap-icons";
-import imagen from "../assets/img/Shakira.jpg"
 
-const ResultItem = () => {
-  
+
+const ResultItem = (props) => {
+  const { musicoData } = props;
   return (
+    
     <Stack gap={4} direction="horizontal">
       <Image
-        src={imagen}
+        src={musicoData.Foto}
         roundedCircle
         width="60px"
         height="60px"
       />
       <div>
-        <h5>Shakira</h5>
+        <h5>{musicoData.Nombre_Artista}</h5>
 
         <Stack gap={2} direction="horizontal">
           <FileEarmarkMusic />
-          <div>Canción 1</div>
+          <div>Canción:</div>
+          <div>{musicoData.Cancion}</div>
         </Stack>
 
         <Stack gap={2} direction="horizontal">
           <FileEarmarkPlay />
-          <div>Pop</div>
+          <div>Década:</div>
+          <div>{musicoData.Decada}</div>
         </Stack>
-      </div>
+      </div>     
     </Stack>
   );
 };

@@ -1,33 +1,41 @@
-import React from "react";
-import { Stack, Image } from "react-bootstrap";
-import { FileEarmarkMusic, FileEarmarkPlay, Whatsapp } from "react-bootstrap-icons";
-import imagen from "../assets/img/Shakira.jpg"
+import React from 'react'
+import Artista from '../components/RegistroArtista'
+import { Stack, Image, Ratio } from 'react-bootstrap'
+import { FileEarmarkMusic, FileEarmarkPlay } from "react-bootstrap-icons";
 
-const Artista = () => {
+const Artistas = (props) => {
+  const { musicoData } = props;
+
   return (
     <Stack gap={2} className="align-items-center">
       <Image
-        src={imagen}
+        src={musicoData.Foto}
         roundedCircle
         width="80px"
         height="80px"
       />
-      <h4>Shakira</h4>
+      <h4>{musicoData.Nombre_Artista}</h4>
       <div className="justify-content-center">
         <Stack gap={2} direction="horizontal">
           <FileEarmarkMusic />
-          <div>Canción 1</div>
+          <div>
+            <a href={musicoData.Link}>
+              {musicoData.Cancion}
+            </a>
+          </div>
         </Stack>
         <Stack gap={2} direction="horizontal">
           <FileEarmarkPlay />
-          <div>Pop</div>
+          <div>{musicoData.Categoria}</div>
         </Stack>
-        <p>
-        <a href="https://www.youtube.com/watch?v=sPTn0QEhxds">https://www.youtube.com/watch?v=sPTn0QEhxds</a>
-        </p>
+        <div style={{ width: 660, height: 'auto' }}>
+          <Ratio aspectRatio="21x9">
+            <embed type="image/svg+xml" src={musicoData.Link} />
+          </Ratio>
+        </div>
       </div>
     </Stack>
   );
 };
 
-export default Artista;
+export default Artistas;
