@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav, Image } from 'react-bootstrap';
+import imagen from "../assets/img/Baner4.jpg"
 
 
 const NavBar = () => {
@@ -38,6 +39,7 @@ const NavBar = () => {
     <div>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
+        <Image src={imagen} width="30px" height="30px" roundedCircle />
           <Navbar.Brand href="/">La Rockola.com</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 20px 15px;
+padding: 1px 5px;
 background: black;
 position: relative;
 bottom: 0;
 width: 100%;
+text-align: center;
 
 
 @media (max-width: 1000px) {
@@ -19,13 +20,15 @@ export const Container = styled.div`
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
-	/* background: red; */
+	background: white; 
+	padding: 5px 5px;
+	text-align: center;
 `
 
 export const Column = styled.div`
 display: flex;
 flex-direction: column;
-text-align: left;
+text-align: center;
 margin-left: 60px;
 `;
 
