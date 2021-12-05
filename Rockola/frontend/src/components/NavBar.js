@@ -17,7 +17,7 @@ const NavBar = () => {
     localStorage.removeItem('user')
   }
 
-  if (user != undefined) {
+  if (user !== undefined) {
     navLinks = (
       <Nav>
         <Nav.Link href="/home">
