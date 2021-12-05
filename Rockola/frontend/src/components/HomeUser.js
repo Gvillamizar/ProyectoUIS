@@ -30,7 +30,7 @@ const HomeUser = () => {
                 <Col>
                     <ButtonGroup vertical>
                         <Button variant="secondary"><a href="/registroartista" style={{color:'white'}}>Registro de Artistas</a></Button>
-                        <Button variant="secondary"><a href="/Artistas" style={{color:'white'}}>Consulta Nuestro Catálogo</a></Button>
+                        <Button variant="secondary"><a href="/ArtistaHome" style={{color:'white'}}>Consulta Nuestro Catálogo</a></Button>
                     </ButtonGroup>
                 </Col>
                 <Col></Col>

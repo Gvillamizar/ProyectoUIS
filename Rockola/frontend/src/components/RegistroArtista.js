@@ -9,20 +9,20 @@ const RegistroArtista = () => {
     function save(even) {     
         even.preventDefault();   
         const obj = {
-            nombre: even.target[0].value,
-            categoria: even.target[1].value,
-            cancion: even.target[2].value,
+            Nombre_Artista: even.target[0].value,
+            Categoria: even.target[1].value,
+            Cancion: even.target[2].value,
             Album: even.target[3].value,
-            decada: even.target[4].value,
-            foto: even.target[5].value,
-            linkCancion: even.target[6].value,
+            Decada: even.target[4].value,
+            Foto: even.target[5].value,
+            Link: even.target[6].value,
             //ID: 7, // vALIDAR COMO CALCULARLO O PONERLO AUTOMÁTICO
         }
         addMusica(obj, (res)=>{
             console.log(res);
-            if(res == "Success"){
-               user.flagNewUser = false;
-               localStorage.setItem("user", JSON.stringify(user));
+            if(res == "Music Created"){
+               //user.flagNewUser = false;
+               //localStorage.setItem("user", JSON.stringify(user));
                window.location.href="http://localhost:3000/home";
             }else{
                 alert("Algo salió mal, vuelve a intentarlo")

@@ -1,5 +1,4 @@
 import React from 'react'
-import Artista from '../components/RegistroArtista'
 import { Stack, Image, Ratio } from 'react-bootstrap'
 import { FileEarmarkMusic, FileEarmarkPlay } from "react-bootstrap-icons";
 

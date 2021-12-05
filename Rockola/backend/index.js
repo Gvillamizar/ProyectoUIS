@@ -1,4 +1,5 @@
 const dbm= require("./src/db/CrudMusica.js");
+const dbU= require("./src/db/CrudUsuario.js");
 
 const APIRutas = require('./routes');
 const express = require('express');
@@ -24,6 +25,23 @@ app.listen(port, ()=>{
       res.send(refDoc);
      }) 
   })
+
+  //Adicionar musica
+  app.post('/', (req, res)=>{
+    const musica=req.body;
+    dbm.addMusica(musica,function(response){
+        res.json(response);
+    })
+  })  
+
+  //Adicionar Usuarios
+  app.post('/usuarios', (req, res)=>{
+    const usuario=req.body;
+    dbU.addUsuario(usuario,function(response){
+        res.json(response);
+    })
+  })
+  
 
 // const dbU=require('./src/db/CrudUsuario.js')
 // const dbM=require('./src/db/crudMusica.js')

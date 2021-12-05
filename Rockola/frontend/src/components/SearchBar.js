@@ -18,7 +18,7 @@ const SearchBar = () => {
         <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('Shakira')}>Shakira</Dropdown.Item>
         <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('Rihanna')}>Rihanna</Dropdown.Item>
         <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('Adele')}>Adele</Dropdown.Item>
-        <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('Beyonce')}>Beyonce</Dropdown.Item>
+        <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('Bruno Mars')}>Bruno Mars</Dropdown.Item>
         <Dropdown.Item href={redirectUrl} onClick={()=> setArtistaInlocalstorage('The Beatles')}>The Beatles</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

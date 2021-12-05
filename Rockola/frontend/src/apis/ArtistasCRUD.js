@@ -11,7 +11,7 @@ export function getMusicaArtista(artista, callback){
 }
 
 export function addMusica(musica, callback){
-    axios.post(url+"/musica/"+musica.Id, musica)
+    axios.post(url+"/musica/", musica)
     .then((res)=>{
       callback(res.data);
     })
@@ -20,12 +20,13 @@ export function addMusica(musica, callback){
     })
   }
 
-  export function addUsuario(usuario, callback){
-    axios.post(url+"/usuarios/"+usuario.ID, usuario)
-    .then((res)=>{
-      callback(res.data);
-    })
-    .catch((err)=>{
-      callback(err);
-    })
-  }
+
+//Traer todos los musicos
+export function getMusica(callback){
+  axios.get(url+"/musica/").then((res)=>{
+    callback(res.data);
+})
+.catch((err)=>{
+    callback(err);
+})
+}
