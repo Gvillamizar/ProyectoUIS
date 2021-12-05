@@ -13,6 +13,7 @@ import NotFound from "./screens/NotFound";
 import SearchResults from "./screens/SearchResults";
 import RegistroUsuario from "./screens/RegistroUsuario"
 import RegistroArtista from "./screens/RegistroArtista"
+import ArtistaHome from "./screens/ArtistaHome"
 
 
 function App() {
@@ -28,8 +29,9 @@ function App() {
         <Route path="/registrousuario" element={<RegistroUsuario />} />
         <Route path="/search-results" element={<SearchResults />} />
         <Route path="/registroartista" element={<RegistroArtista />} />
+        <Route path="/ArtistaHome" element={<ArtistaHome />} />
       </Routes>
-      <Footer />
+      
     </BrowserRouter>
   );
 }

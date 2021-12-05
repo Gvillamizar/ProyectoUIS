@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Button, Container, Row } from 'react-bootstrap'
 
-import { addUsuario } from '../apis/ArtistasCRUD'
+import { addUsuario } from '../apis/UsuariosCRUD'
 
 const RegistroUsuario = () => {
     var user = JSON.parse(localStorage.getItem("user"));
@@ -20,7 +20,7 @@ const RegistroUsuario = () => {
         }
         addUsuario(obj, (res)=>{
             console.log(res);
-            if(res == "Success"){
+            if(res == "User Created"){
                user.flagNewUser = false;
                localStorage.setItem("user", JSON.stringify(user));
                window.location.href="http://localhost:3000/home";
