@@ -31,7 +31,7 @@ function App() {
         <Route path="/registroartista" element={<RegistroArtista />} />
         <Route path="/ArtistaHome" element={<ArtistaHome />} />
       </Routes>
-      
+      <Footer />
     </BrowserRouter>
   );
 }

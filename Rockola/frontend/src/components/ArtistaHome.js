@@ -3,10 +3,11 @@ import { Stack, Image, Ratio } from 'react-bootstrap'
 import { FileEarmarkMusic, FileEarmarkPlay } from "react-bootstrap-icons";
 
 const ArtistasHome = () => {
-  const { musicoData };
+  // const { musicoData };
 
   return (
-    <Stack gap={2} className="align-items-center">
+    <h1>Todos los Artistas</h1>
+  /*   <Stack gap={2} className="align-items-center">
       <Image
         src={musicoData.Foto}
         roundedCircle
@@ -33,7 +34,7 @@ const ArtistasHome = () => {
           </Ratio>
         </div>
       </div>
-    </Stack>
+    </Stack> */
   );
 };
 
