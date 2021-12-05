@@ -2,7 +2,7 @@ import axios from "axios";
 const url = "https://larockola-app.herokuapp.com/";
 
 export function getMusicaArtista(artista, callback){
-    axios.get(url+"/musica/search/"+artista).then((res)=>{
+    axios.get(url+"musica/search/"+artista).then((res)=>{
         callback(res.data);
     })
     .catch((err)=>{
@@ -11,7 +11,7 @@ export function getMusicaArtista(artista, callback){
 }
 
 export function addMusica(musica, callback){
-    axios.post(url+"/musica/", musica)
+    axios.post(url+"musica/", musica)
     .then((res)=>{
       callback(res.data);
     })
@@ -23,7 +23,7 @@ export function addMusica(musica, callback){
 
 //Traer todos los musicos
 export function getMusica(callback){
-  axios.get(url+"/musica/").then((res)=>{
+  axios.get(url+"musica/").then((res)=>{
     callback(res.data);
 })
 .catch((err)=>{

@@ -5,6 +5,7 @@ import imagen from "../assets/img/Baner4.jpg"
 
 const NavBar = () => {
   var user = JSON.parse(localStorage.getItem("user"));
+  console.log('Usuario:'+user);
 
   var navLinks = (
     <Nav>
@@ -17,7 +18,7 @@ const NavBar = () => {
     localStorage.removeItem('user')
   }
 
-  if (user !== undefined) {
+  if (user !== undefined && user !== null) {
     navLinks = (
       <Nav>
         <Nav.Link href="/home">
