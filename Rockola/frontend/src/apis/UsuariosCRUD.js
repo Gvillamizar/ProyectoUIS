@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:5000";
+const url = "https://larockola-app.herokuapp.com/";
 
   export function addUsuario(usuario, callback){
     axios.post(url+"/usuarios/", usuario)

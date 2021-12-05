@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:5000";
+const url = "https://larockola-app.herokuapp.com/";
 
 export function getMusicaArtista(artista, callback){
     axios.get(url+"/musica/search/"+artista).then((res)=>{
