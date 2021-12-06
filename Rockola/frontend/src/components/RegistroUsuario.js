@@ -23,7 +23,7 @@ const RegistroUsuario = () => {
             if (res == "User Created") {
                 user.flagNewUser = false;
                 localStorage.setItem("user", JSON.stringify(user));
-                window.location.href = "http://localhost:3000/home";
+                window.location.href = "https://larockola-5cc46.firebaseapp.com/home";
             } else {
                 alert("Algo salió mal, vuelve a intentarlo")
             }
